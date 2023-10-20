@@ -18,6 +18,12 @@
 ::after {
   --tw-content: "";
 }
+@font-face {
+  font-family: "AppleFont";
+  src: url("/assets/font/SVN-Apple.ttf") format("woff2");
+}
+
+
 
 /*
 1. Use a consistent sensible line-height in all browsers.
@@ -5145,13 +5151,14 @@ select {
 .text-right {
   text-align: right;
 }
-.font-base {
-  
-  font-family: 'Roboto', sans-serif;
-}
- .font-base li {
+.font-base nav  {
   font-family: "Rajdhani", sans-serif;
 }
+
+.font-base   {
+  font-family: "AppleFont", sans-serif;
+}
+
 .font-heading {
   font-family: "Rajdhani", sans-serif;
 }
