@@ -23,15 +23,7 @@ function depositTab(tabId) {
   tablink.classList.add("text-primary"); // Thêm lớp "text-primary" cho tab chữ
 }
 
-//  xử lý nav mobile  
-document.addEventListener("DOMContentLoaded", function () {
-  const menuToggle = document.getElementById("menuToggle");
-  const mobileMenu = document.getElementById("mobileMenu");
 
-  menuToggle.addEventListener("click", function () {
-    mobileMenu.classList.toggle("translate-x-full");
-  });
-});
 // check website 
 // Lấy URL hiện tại
 var currentURL = window.location.href;

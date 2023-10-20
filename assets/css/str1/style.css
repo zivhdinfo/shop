@@ -22,6 +22,10 @@
   font-family: "AppleFont";
   src: url("/assets/font/SVN-Apple.ttf") format("woff2");
 }
+@font-face {
+  font-family: "Anton_Regular";
+  src: url("/assets/font/Anton-Regular.ttf") format("woff2");
+}
 
 
 
@@ -5151,13 +5155,18 @@ select {
 .text-right {
   text-align: right;
 }
+.font-base   {
+  font-family: 'Roboto', sans-serif;
+  
+}
 .font-base nav  {
   font-family: "Rajdhani", sans-serif;
 }
 
-.font-base   {
+.font-base .title-website  {
   font-family: "AppleFont", sans-serif;
 }
+
 
 .font-heading {
   font-family: "Rajdhani", sans-serif;
