@@ -51,6 +51,8 @@
       href="assets/vendors/common/swiper/css/swiper-bundle.min.css"
       rel="stylesheet"
     />
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
     <!-- Template CSS-->
     <link href="assets/css/str1/style.css" rel="stylesheet" />
   </head>
@@ -924,23 +926,36 @@
           <div class="container">
             <div class="grid grid-cols-12 gap-5 md:gap-6 lg:gap-7.5 mb-7.5">
               <figure
-                class="col-span-full md:row-start-1 md:row-end-2 lg:col-span-8 lg:row-start-1 lg:row-end-3"
-              >
+              class="col-span-full md:row-start-1 md:row-end-2 lg:col-span-8 lg:row-start-1 lg:row-end-3"
+            >
+              <div class="video-container">
                 <a
-                  class="group relative block h-full overflow-hidden bg-gray-900 glightbox"
-                  href="https://www.youtube.com/watch?v=hcza7QqfsGw"
+                  class="group relative block h-full overflow-hidden bg-gray-900"
+                  data-fancybox
+                  data-type="iframe"
+                  data-src="https://www.youtube.com/embed/hcza7QqfsGw?autoplay=1"
+                  data-options='{
+                    "width": 640,
+                    "height": 360
+                  }'
+                  href="javascript:;"
                 >
                   <img
                     class="aspect-video w-full object-cover transition-all duration-300 group-hover:scale-110 group-hover:opacity-75 opacity-40"
                     src="https://pbs.twimg.com/media/F5dGJeIW0AAZ-aV?format=jpg&amp;name=large"
-                    alt="Video Hướng Dẫn Sử Dụng" /><span
+                    alt="Video Hướng Dẫn Sử Dụng"
+                  />
+                  <span
                     class="absolute top-1/2 left-1/2 flex aspect-square -translate-x-2/4 -translate-y-2/4 items-center justify-center rounded-full bg-secondary w-[60px]"
-                    ><svg role="img" class="fill-white ml-[3px] h-5 w-4">
-                      <use
-                        xlink:href="./assets/img/yt1/sprite.svg#play"
-                      ></use></svg></span
-                ></a>
-              </figure>
+                  >
+                    <svg role="img" class="fill-white ml-[3px] h-5 w-4">
+                      <use xlink:href="./assets/img/yt1/sprite.svg#play"></use>
+                    </svg>
+                  </span>
+                </a>
+              </div>
+            </figure>
+            
               <div
                 class="bg-white col-span-full dark:bg-gray-800 lg:col-span-4 lg:px-8 lg:py-7 md:px-6 md:py-6 px-5 py-5 self-start shadow-3xl sm:px-6 top-8 tracking-tight xl:py-9"
               >
@@ -1185,42 +1200,6 @@
         </div>
 
         <!-- tab  -->
-        <div id="tabs">
-          <button class="tablink" onclick="openTab('tab1')">Tab 1</button>
-          <button class="tablink" onclick="openTab('tab2')">Tab 2</button>
-          <button class="tablink" onclick="openTab('tab3')">Tab 3</button>
-        </div>
-
-        <div id="tab1" class="tabcontent">
-          <h3>Tab 1 Content</h3>
-          <p>This is the content of Tab 1.</p>
-        </div>
-
-        <div id="tab2" class="tabcontent">
-          <h3>Tab 2 Content</h3>
-          <p>This is the content of Tab 2.</p>
-        </div>
-
-        <div id="tab3" class="tabcontent">
-          <h3>Tab 3 Content</h3>
-          <p>This is the content of Tab 3.</p>
-        </div>
-
-        <script>
-          // Ẩn tất cả các tab ngoại trừ tab đầu tiên khi trang web tải
-          var tabcontent = document.getElementsByClassName("tabcontent");
-          for (var i = 1; i < tabcontent.length; i++) {
-            tabcontent[i].style.display = "none";
-          }
-
-          function openTab(tabId) {
-            var i;
-            for (i = 0; i < tabcontent.length; i++) {
-              tabcontent[i].style.display = "none";
-            }
-            document.getElementById(tabId).style.display = "block";
-          }
-        </script>
         <!-- end tab  -->
 
         <div class="pb-20 md:pb-24 lg:pb-[120px]">
@@ -1882,6 +1861,9 @@
     </dialog>
 
     <!-- Scripts ================================================== -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- fancybox -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <!-- Ion icon  -->
     <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
     <!-- Vendors JS -->

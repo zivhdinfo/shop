@@ -24,30 +24,4 @@ function depositTab(tabId) {
 }
 
 
-// check website 
-var currentURL = window.location.href;
 
-// Danh sách các tên miền hợp lệ
-var validDomains = ["robuxvn.net", "rodmin.vn", "127.0.0.1:5500"];
-
-// Kiểm tra xem currentURL chứa một trong các tên miền hợp lệ
-var isValidDomain = validDomains.some(function (domain) {
-    return currentURL.indexOf(domain) !== -1;
-});
-
-if (isValidDomain) {
-    // Tên miền hợp lệ, không cần chuyển hướng
-    console.log("Design by Zivhd | Contact:  Zivhd.Info");
-} else {
-    // Hiển thị thông báo và yêu cầu người dùng nhập key
-    var userInput = prompt("Nhập key để tiếp tục:");
-    
-    // Kiểm tra key
-    if (userInput === "your_secret_key") { // Thay "your_secret_key" bằng key thực tế của bạn
-        // Key đúng, không cần chuyển hướng
-        console.log("Design by Zivhd | Contact:  Zivhd.Info");
-    } else {
-        // Key sai, chuyển hướng sang link Facebook của bạn
-        window.location.href = "https://facebook.com/zivhd.username";
-    }
-}
