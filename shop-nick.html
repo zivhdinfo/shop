@@ -691,6 +691,7 @@
       
       <!-- main  -->
       <main id="main-content" class="grow lg:pt-0">
+<<<<<<< HEAD
         <div class="pt-12 pb-20 lg:pb-44 lg:pt-24 xl:pt-[105px]">
           <div class="container">
             <div
@@ -746,6 +747,109 @@
                   </li>
                 </ul>
               </tab>
+=======
+        <div class="pb-20 md:pb-24 lg:pb-[120px]">
+          <div class="container">
+            <div
+              class="mb-10 md:mb-12 lg:mb-16 xl:mb-20 flex flex-col gap-y-6 sm:flex-row sm:justify-between sm:items-center"
+            >
+              <h2
+                class="title-website text-2.5xl font-bold text-gray-900 before:text-accent before:content-['.'] dark:text-white sm:text-3.5xl md:text-4xl lg:text-[62px] lg:leading-none"
+              >
+                DANH MỤC TÀI KHOẢN
+              </h2>
+            </div>
+
+            <!-- demoo  -->
+            <div class="space-x-4">
+              <button
+                class="px-4 py-2 bg-blue-500 text-white rounded-md"
+                onclick="showContent('tat-ca')"
+              >
+                Tất cả
+              </button>
+              <button class="px-4 py-2" onclick="showContent('danh-muc-a')">
+                Danh mục A
+              </button>
+              <button class="px-4 py-2" onclick="showContent('danh-muc-b')">
+                Danh mục B
+              </button>
+            </div>
+
+            <!-- Đây là nơi bạn có thể hiển thị nội dung tương ứng với danh mục -->
+            <div class="mt-4">
+              <!-- Nội dung danh mục mặc định -->
+              <div class="danh-muc tat-ca">
+                Nội dung danh mục mặc định tại đây
+              </div>
+
+              <!-- Nội dung danh mục A -->
+              <div class="danh-muc danh-muc-a hidden">
+                Nội dung danh mục A tại đây
+              </div>
+
+              <!-- Nội dung danh mục B -->
+              <div class="danh-muc danh-muc-b hidden">
+                Nội dung danh mục B tại đây
+              </div>
+            </div>
+            <style>
+              /* CSS để ẩn hoặc hiển thị danh mục */
+              .hidden {
+                display: none;
+              }
+            </style>
+
+            <script>
+              function showContent(category) {
+                // Ẩn tất cả các danh mục và loại bỏ lớp "text-white" cho các tab
+                document.querySelectorAll(".danh-muc").forEach(function (el) {
+                  el.classList.add("hidden");
+                });
+                document.querySelectorAll("button").forEach(function (button) {
+                  button.classList.remove("text-white");
+                });
+
+                // Hiển thị danh mục được chọn và thêm lớp "text-white" cho tab tương ứng
+                document
+                  .querySelector(`.${category}`)
+                  .classList.remove("hidden");
+                document
+                  .querySelector(`button[onclick="showContent('${category}')"]`)
+                  .classList.add("text-white");
+              }
+            </script>
+
+            <!-- end demo  -->
+            <div
+              class="gap-x-6 gap-y-9 grid grid-cols-12 lg:gap-x-7.5 md:gap-x-6"
+            >
+              <div class="col-span-6 lg:col-span-3 md:col-span-4 sm:col-span-6">
+                <figure class="group mb-5.5 overflow-hidden relative">
+                  <img
+                    class="aspect-[27/34] duration-300 object-cover transition-transform w-full lazyload"
+                    src="./image_shop/loading.gif"
+                    data-src="./image_shop/BLOXFRUIT.png"
+                    alt="Đây là danh mục"
+                  />
+                  <div
+                    class="absolute bg-white dark:bg-gray-900 group-hover:opacity-90 inset-0 opacity-0 transition-opacity"
+                  ></div>
+                  <div
+                    class="flex absolute justify-center left-0 right-0 top-1/2 -translate-y-1/2 scale-90 [@media(hover:hover)]:opacity-0 [@media(hover:hover)]:transition-all [@media(hover:hover)]:duration-300 [@media(hover:hover)]:group-hover:scale-100 [@media(hover:hover)]:group-hover:opacity-100"
+                  >
+                    <a href="#">
+                      <img
+                        class="font-bold gap-x-3 inline-flex justify-center lazyLoad leading-none lg:px-8 md:py-[18px] px-4 py-4 text-center text-gray-900 text-sm transition-colors uppercase"
+                        data-src="./image_shop/button.png"
+                        style="height: auto"
+                        src="./image_shop/button.png"
+                      />
+                    </a>
+                  </div>
+                </figure>
+              </div>
+>>>>>>> 803938564b2a61af531fb31efbfcec6c70af8862
             </div>
             <div class="gap-x-6 gap-y-9 grid grid-cols-12 lg:gap-x-7.5 md:gap-x-6">
               <div class="bg-gray-50 col-span-6 dark:bg-gray-700 lg:col-span-3 md:col-span-4 shadow-2xl sm:col-span-6">
