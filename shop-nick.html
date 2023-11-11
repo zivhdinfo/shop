@@ -67,6 +67,7 @@
     <!-- Template CSS-->
     <link href="assets/css/str1/style.css" rel="stylesheet" />
   </head>
+
   <body
     class="relative z-10 antialiased font-base text-gray-500 text-sm font-medium lg:text-base h-full bg-white dark:bg-gray-900 overflow-x-hidden dark:text-gray"
   >
@@ -339,7 +340,8 @@
                   <a
                     class="relative flex py-4 px-2 sm:px-2 gap-x-3.5 text-gray-900 dark:text-white"
                     href=""
-                    ><div
+                  >
+                    <div
                       class="font-bold text-sm leading-none text-right hidden lg:block"
                     >
                       <div class="text-2xs">
@@ -686,359 +688,118 @@
           <!-- Navigation (Mobile) / End -->
         </div>
       </div>
-
+      
+      <!-- main  -->
       <main id="main-content" class="grow lg:pt-0">
-        <div class="pb-20 md:pb-24 lg:pb-[130px]">
+        <div class="pt-12 pb-20 lg:pb-44 lg:pt-24 xl:pt-[105px]">
           <div class="container">
-            <div class="grid grid-cols-12 gap-5 md:gap-6 lg:gap-7.5 mb-7.5">
-              <figure
-                class="col-span-full md:row-start-1 md:row-end-2 lg:col-span-8 lg:row-start-1 lg:row-end-3"
-              >
-                <div class="video-container">
-                  <a
-                    class="group relative block h-full overflow-hidden bg-gray-900"
-                    data-fancybox
-                    data-type="iframe"
-                    data-src="https://www.youtube.com/embed/hcza7QqfsGw?autoplay=1"
-                    data-options='{
-                    "width": 640,
-                    "height": 360
-                  }'
-                    href="javascript:;"
-                  >
-                    <img
-                      class="aspect-video w-full object-cover transition-all duration-300 group-hover:scale-110 group-hover:opacity-75 opacity-40"
-                      src="https://pbs.twimg.com/media/F5dGJeIW0AAZ-aV?format=jpg&amp;name=large"
-                      alt="Video Hướng Dẫn Sử Dụng"
-                    />
-                    <span
-                      class="absolute top-1/2 left-1/2 flex aspect-square -translate-x-2/4 -translate-y-2/4 items-center justify-center rounded-full bg-secondary w-[60px]"
-                    >
-                      <svg role="img" class="fill-white ml-[3px] h-5 w-4">
-                        <use
-                          xlink:href="./assets/img/yt1/sprite.svg#play"
-                        ></use>
-                      </svg>
-                    </span>
-                  </a>
-                </div>
-              </figure>
-
-              <div
-                class="bg-white col-span-full dark:bg-gray-800 lg:col-span-4 lg:px-8 lg:py-7 md:px-6 md:py-6 px-5 py-5 self-start shadow-3xl sm:px-6 top-8 tracking-tight xl:py-9"
-              >
-                <div class="flex font-bold mb-3.5">
-                  <div
-                    class="w-full cursor-pointer bg-trueGray-900 tablinks"
-                    onclick="depositTab('nap')"
-                  >
-                    <h2 class="hover:text-accent mx-auto px-3 text-center">
-                      NẠP THẺ
-                    </h2>
-                  </div>
-                  <div
-                    class="w-full cursor-pointer bg-trueGray-900 tablinks"
-                    onclick="depositTab('momo')"
-                  >
-                    <h2 class="hover:text-accent mx-auto px-3 text-center">
-                      MOMO/ATM
-                    </h2>
-                  </div>
-                  <div
-                    class="w-full cursor-pointer bg-trueGray-900 tablinks"
-                    onclick="depositTab('top')"
-                  >
-                    <h2 class="hover:text-accent mx-auto px-3 text-center">
-                      TOP NẠP
-                    </h2>
-                  </div>
-                </div>
-                <span class="tabcontent" id="nap" style="display: block">
-                  <div class="col-span-full">
-                    <select
-                      class="bg-[length:10px_6px] bg-[position:right_18px_center] bg-caret bg-white/40 border-base dark:bg-caret-white dark:bg-gray-900/40 dark:border-gray-650 dark:focus:bg-gray-900 dark:focus:border-accent dark:focus:text-white dark:placeholder:text-gray-500/80 dark:text-white duration-150 focus:border-accent focus:outline-0 focus:ring-0 focus:text-gray-900 font-medium h-12.5 hover:cursor-pointer px-4 text-gray-900 transition-all w-full"
-                      name="shipping-country"
-                      id="shipping-country"
-                    >
-                      <option value="" selected="">Chọn Loại Thẻ</option>
-                      <option value="VIETTEL">Viettel</option>
-                      <option value="VINAPHONE">Vinaphone</option>
-                      <option value="MOBIFONE">Mobifone</option>
-                      <option value="VNMOBI">Vietnammobi</option>
-                      <option value="ZING">Zing</option>
-                      <option value="GATE">GATE</option>
-                      <option value="VCOIN">Vcoin</option>
-                    </select>
-                  </div>
-                  <div class="col-span-full pt-2">
-                    <select
-                      class="w-full border-base bg-white/40 px-4 h-12.5 font-medium text-gray-900 transition-all duration-150 bg-caret bg-[length:10px_6px] bg-[position:right_18px_center] focus:border-accent focus:outline-0 focus:ring-0 focus:text-gray-900 hover:cursor-pointer dark:border-gray-650 dark:bg-gray-900/40 dark:text-white dark:placeholder:text-gray-500/80 dark:focus:border-accent dark:focus:text-white dark:bg-caret-white dark:focus:bg-gray-900"
-                      name="shipping-city"
-                      id="shipping-city"
-                    >
-                      <option value="" selected="">Chọn Mệnh Giá</option>
-                      <option value="10000">10,000 VND</option>
-                      <option value="20000">20,000 VND</option>
-                      <option value="30000">30,000 VND</option>
-                      <option value="50000">50,000 VND</option>
-                      <option value="100000">100,000 VND</option>
-                      <option value="200000">200,000 VND</option>
-                      <option value="300000">300,000 VND</option>
-                      <option value="500000">500,000 VND</option>
-                      <option value="1000000">1,000,000 VND</option>
-                    </select>
-                  </div>
-                  <div class="col-span-full mt-2">
-                    <input
-                      class="group-[.is-success]:bg-input-success-dark group-[.is-error]:border-danger group-[.is-error]:bg-input-invalid group-[.is-error]:text-danger group-[.is-success]:pr-16 group-[.is-invalid]:pr-16 px-4 py-2 border-base bg-white/40 bg-[length:18px_18px,_38px_38px] bg-[position:right_16px_center,_right_6px_center] bg-no-repeat font-medium leading-8 tracking-tight text-gray-900 transition-all duration-150 placeholder:font-normal placeholder:text-gray-500/60 focus:border-accent focus:bg-white focus:text-gray-900 focus:outline-0 focus:ring-0 dark:border-gray-650 dark:group-[.is-success]:bg-input-success dark:bg-gray-900/40 dark:text-white dark:placeholder:text-gray-500/80 dark:focus:border-accent dark:focus:bg-gray-900 w-full mb-3"
-                      placeholder="Seri Thẻ Cào"
-                      id="seri"
-                      name="serial"
-                      type="text"
-                    />
-                  </div>
-                  <div class="col-span-full">
-                    <input
-                      class="group-[.is-success]:bg-input-success-dark group-[.is-error]:border-danger group-[.is-error]:bg-input-invalid group-[.is-error]:text-danger group-[.is-success]:pr-16 group-[.is-invalid]:pr-16 px-4 py-2 border-base bg-white/40 bg-[length:18px_18px,_38px_38px] bg-[position:right_16px_center,_right_6px_center] bg-no-repeat font-medium leading-8 tracking-tight text-gray-900 transition-all duration-150 placeholder:font-normal placeholder:text-gray-500/60 focus:border-accent focus:bg-white focus:text-gray-900 focus:outline-0 focus:ring-0 dark:border-gray-650 dark:group-[.is-success]:bg-input-success dark:bg-gray-900/40 dark:text-white dark:placeholder:text-gray-500/80 dark:focus:border-accent dark:focus:bg-gray-900 w-full mb-3"
-                      placeholder="Mã Thẻ Cào"
-                      id="pin"
-                      name="code"
-                      type="text"
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    class="bg-primary font-bold hover:bg-primary/90 hover:cursor-pointer leading-tight lg:px-12 py-5 text-white tracking-tight transition-colors w-full"
-                  >
-                    Nạp Ngay
-                  </button>
-                </span>
-                <span class="tabcontent" id="momo" style="display: none">
-                  <div class="col-span-full pt-2">
-                    <select
-                      class="w-full border-base bg-white/40 px-4 h-12.5 font-medium text-gray-900 transition-all duration-150 bg-caret bg-[length:10px_6px] bg-[position:right_18px_center] focus:border-accent focus:outline-0 focus:ring-0 focus:text-gray-900 hover:cursor-pointer dark:border-gray-650 dark:bg-gray-900/40 dark:text-white dark:placeholder:text-gray-500/80 dark:focus:border-accent dark:focus:text-white dark:bg-caret-white dark:focus:bg-gray-900"
-                      name="shipping-city"
-                      id="shipping-city"
-                    >
-                      <option value="0">Chọn Hình Thức Nạp</option>
-                      <option value="1">Momo</option>
-                      <option value="2">Ngân Hàng</option>
-                    </select>
-                  </div>
-                  <div class="col-span-full mt-2">
-                    <input
-                      class="group-[.is-success]:bg-input-success-dark group-[.is-error]:border-danger group-[.is-error]:bg-input-invalid group-[.is-error]:text-danger group-[.is-success]:pr-16 group-[.is-invalid]:pr-16 px-4 py-2 border-base bg-white/40 bg-[length:18px_18px,_38px_38px] bg-[position:right_16px_center,_right_6px_center] bg-no-repeat font-medium leading-8 tracking-tight text-gray-900 transition-all duration-150 placeholder:font-normal placeholder:text-gray-500/60 focus:border-accent focus:bg-white focus:text-gray-900 focus:outline-0 focus:ring-0 dark:border-gray-650 dark:group-[.is-success]:bg-input-success dark:bg-gray-900/40 dark:text-white dark:placeholder:text-gray-500/80 dark:focus:border-accent dark:focus:bg-gray-900 w-full mb-3"
-                      type="number"
-                      value=""
-                      placeholder="Nhập số tiền muốn nạp"
-                    />
-                  </div>
-
-                  <button
-                    type="submit"
-                    class="bg-primary font-bold hover:bg-primary/90 hover:cursor-pointer leading-tight lg:px-12 py-5 text-white tracking-tight transition-colors w-full"
-                  >
-                    Tạo Hóa Đơn Nạp
-                  </button>
-                </span>
-                <span class="tabcontent" id="top" style="display: none">
-                  <div class="col-span-full pt-2">
-                    <a
-                      class="bg-[#393d58] grid gap-x-2.5 hover:-translate-y-2 hover:shadow-md items-center p-4 py-[13px] shadow-2xl text-white transition-transform"
-                      style="grid-template-columns: 1fr 1fr"
-                    >
-                      <div class="flex font-bold">
-                        <span>1. Username****</span>
-                      </div>
-                      <span class="text-[#fffac3]" style="text-align: right"
-                        >+540,000 VNĐ</span
-                      >
-                    </a>
-                  </div>
-                  <div class="col-span-full pt-2">
-                    <a
-                      class="bg-[#393d58] grid gap-x-2.5 hover:-translate-y-2 hover:shadow-md items-center p-4 py-[13px] shadow-2xl text-white transition-transform"
-                      style="grid-template-columns: 1fr 1fr"
-                    >
-                      <div class="flex font-bold">
-                        <span>1. Username****</span>
-                      </div>
-                      <span class="text-[#fffac3]" style="text-align: right"
-                        >+540,000 VNĐ</span
-                      >
-                    </a>
-                  </div>
-                  <div class="col-span-full pt-2">
-                    <a
-                      class="bg-[#393d58] grid gap-x-2.5 hover:-translate-y-2 hover:shadow-md items-center p-4 py-[13px] shadow-2xl text-white transition-transform"
-                      style="grid-template-columns: 1fr 1fr"
-                    >
-                      <div class="flex font-bold">
-                        <span>1. Username****</span>
-                      </div>
-                      <span class="text-[#fffac3]" style="text-align: right"
-                        >+540,000 VNĐ</span
-                      >
-                    </a>
-                  </div>
-                  <div class="col-span-full pt-2">
-                    <a
-                      class="bg-[#393d58] grid gap-x-2.5 hover:-translate-y-2 hover:shadow-md items-center p-4 py-[13px] shadow-2xl text-white transition-transform"
-                      style="grid-template-columns: 1fr 1fr"
-                    >
-                      <div class="flex font-bold">
-                        <span>1. Username****</span>
-                      </div>
-                      <span class="text-[#fffac3]" style="text-align: right"
-                        >+540,000 VNĐ</span
-                      >
-                    </a>
-                  </div>
-                  <div class="col-span-full pt-2">
-                    <a
-                      class="bg-[#393d58] grid gap-x-2.5 hover:-translate-y-2 hover:shadow-md items-center p-4 py-[13px] shadow-2xl text-white transition-transform"
-                      style="grid-template-columns: 1fr 1fr"
-                    >
-                      <div class="flex font-bold">
-                        <span>1. Username****</span>
-                      </div>
-                      <span class="text-[#fffac3]" style="text-align: right"
-                        >+540,000 VNĐ</span
-                      >
-                    </a>
-                  </div>
-                </span>
-              </div>
-            </div>
-            <div class="grid grid-cols-12 gap-5 md:gap-6 lg:gap-7.5">
-              <div class="col-span-full md:col-span-6">
-                <div
-                  class="bg-white col-span-full dark:bg-gray-800 flex items-center mt-4 px-3 py-3 rounded-lg shadow-2xl shadow-lg"
+            <div
+            class="mb-10 md:mb-12 lg:mb-16 xl:mb-20 flex flex-col gap-y-6 sm:flex-row sm:justify-between sm:items-center"
+          >
+            <h2
+              class="title-website text-2.5xl font-bold text-gray-900 before:text-accent before:content-['.'] dark:text-white sm:text-3.5xl md:text-4xl lg:text-[62px] lg:leading-none"
+            >
+              Danh Sách Dịch Vụ
+            </h2>
+          </div>
+            <div
+              class="flex gap-x-8 justify-between items-center mb-6 md:mb-8 lg:mb-10 xl:mb-12"
+            >
+              <tab class="w-full">
+                <ul
+                  class="flex flex-wrap justify-center gap-x-4 lg:gap-x-9 text-base lg:text-lg font-bold uppercase tracking-tight"
                 >
-                  <i class="fa-bell fa-regular text-primary"></i>
-                  <marquee class="font-bold text-primary">
-                    Thông báo tới khách hàng....
-                  </marquee>
-                </div>
-              </div>
-              <div class="col-span-full md:col-span-6">
-                <div
-                  class="bg-white col-span-full dark:bg-gray-800 flex items-center mt-4 px-3 py-3 rounded-lg shadow-2xl shadow-lg"
-                >
-                  <i class="fa-cart-shopping fa-solid text-primary"></i>
-                  <marquee class="font-bold text-primary">
-                    <span class="">Khách Hàng A</span> Vừa Mua Tài Khoản Acb Xyz
-                  </marquee>
-                </div>
-              </div>
+                  <li>
+                    <a
+                      class="text-gray-900 text-primary dark:text-primary transition-colors"
+                      href="#"
+                      >TẤT CẢ</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-900 hover:text-primary dark:text-white dark:hover:text-primary transition-colors"
+                      href="#"
+                      >Danh Mục A</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-900 hover:text-primary dark:text-white dark:hover:text-primary transition-colors"
+                      href="#"
+                      >Danh Mục B</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-900 hover:text-primary dark:text-white dark:hover:text-primary transition-colors"
+                      href="#"
+                      >Danh Mục C</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="text-gray-900 hover:text-primary dark:text-white dark:hover:text-primary transition-colors"
+                      href="#"
+                      >Danh Mục D</a
+                    >
+                  </li>
+                </ul>
+              </tab>
             </div>
+            <div class="gap-x-6 gap-y-9 grid grid-cols-12 lg:gap-x-7.5 md:gap-x-6">
+              <div class="bg-gray-50 col-span-6 dark:bg-gray-700 lg:col-span-3 md:col-span-4 shadow-2xl sm:col-span-6">
+                <figure class="group relative overflow-hidden bg-gray-100">
+                  <img class="aspect-[37/36] duration-300 group-hover:scale-110 object-cover transition-transform w-full" src="./image_shop/BLOXFRUIT.png" alt="Neko MaGiX Black T-Shirt">
+                  <div class="absolute inset-0 bg-white dark:bg-gray-900 opacity-0 group-hover:opacity-90 transition-opacity"></div>
+                  <div class="flex absolute justify-center left-0 right-0 top-1/2 -translate-y-1/2 scale-90 [@media(hover:hover)]:opacity-0 [@media(hover:hover)]:transition-all [@media(hover:hover)]:duration-300 [@media(hover:hover)]:group-hover:scale-100 [@media(hover:hover)]:group-hover:opacity-100">
+                    <a href="viewproduct.html" class="inline-flex text-center font-bold leading-none transition-colors uppercase justify-center gap-x-3 py-4 px-4 md:py-[18px] lg:px-8 text-sm text-white bg-primary hover:bg-primary/90">Còn : 100.000 Tài Khoản</a>
+                  </div>
+                </figure>
+                <div class="flex flex-col items-center md:p-7 p-5">
+                  <a href="viewproduct.html" class="bg-gradient-to-r font-bold from-[#9246ff] gap-x-3 hover:bg-primary/90 inline-flex justify-center leading-none lg:px-8 md:py-[18px] px-4 py-4 text-center text-sm text-white to-[#ff46aa] transition-colors uppercase">100.000 VND</a>
+                  
+                </div>
+              </div>
+            <div class="bg-gray-50 col-span-6 dark:bg-gray-700 lg:col-span-3 md:col-span-4 shadow-2xl sm:col-span-6">
+                <figure class="group relative overflow-hidden bg-gray-100">
+                  <img class="aspect-[37/36] duration-300 group-hover:scale-110 object-cover transition-transform w-full" src="./image_shop/BLOXFRUIT.png" alt="Neko MaGiX Black T-Shirt">
+                  <div class="absolute inset-0 bg-white dark:bg-gray-900 opacity-0 group-hover:opacity-90 transition-opacity"></div>
+                  <div class="-translate-y-1/2 [@media(hover:hover)]:duration-300 [@media(hover:hover)]:group-hover:opacity-100 [@media(hover:hover)]:group-hover:scale-100 [@media(hover:hover)]:transition-all absolute flex justify-center left-0 right-0 scale-90 top-1/2">
+                    <a href="viewproduct.html" class="bg-[#ff3d54] font-bold gap-x-3 hover:bg-social-patreon/90 inline-flex justify-center leading-none lg:px-8 md:py-[18px] px-4 py-4 rotate-45 text-center text-sm text-white transition-colors uppercase">HẾT HÀNG</a>
+                  </div>
+                </figure>
+                <div class="flex flex-col items-center md:p-7 p-5">
+                  <a href="viewproduct.html" class="bg-gradient-to-r font-bold from-[#9246ff] gap-x-3 hover:bg-primary/90 inline-flex justify-center leading-none lg:px-8 md:py-[18px] px-4 py-4 text-center text-sm text-white to-[#ff46aa] transition-colors uppercase">100.000 VND</a>
+                  
+                </div>
+              </div><div class="bg-gray-50 col-span-6 dark:bg-gray-700 lg:col-span-3 md:col-span-4 shadow-2xl sm:col-span-6">
+                <figure class="group relative overflow-hidden bg-gray-100">
+                  <img class="aspect-[37/36] duration-300 group-hover:scale-110 object-cover transition-transform w-full" src="./image_shop/BLOXFRUIT.png" alt="Neko MaGiX Black T-Shirt">
+                  <div class="absolute inset-0 bg-white dark:bg-gray-900 opacity-0 group-hover:opacity-90 transition-opacity"></div>
+                  <div class="-translate-y-1/2 [@media(hover:hover)]:duration-300 [@media(hover:hover)]:group-hover:opacity-100 [@media(hover:hover)]:group-hover:scale-100 [@media(hover:hover)]:transition-all absolute flex justify-center left-0 right-0 scale-90 top-1/2">
+                    <a href="viewproduct.html" class="bg-[#393d58] font-bold gap-x-3 hover:bg-social-patreon/90 inline-flex justify-center leading-none lg:px-8 md:py-[18px] px-4 py-4 rotate-45 text-center text-sm text-white transition-colors uppercase">ĐẶT TRƯỚC </a>
+                  </div>
+                </figure>
+                <div class="flex flex-col items-center md:p-7 p-5">
+                  <a href="viewproduct.html" class="bg-gradient-to-r font-bold from-[#9246ff] gap-x-3 hover:bg-primary/90 inline-flex justify-center leading-none lg:px-8 md:py-[18px] px-4 py-4 text-center text-sm text-white to-[#ff46aa] transition-colors uppercase">100.000 VND</a>
+                  
+                </div>
+              </div></div>
+
+           
+            
           </div>
         </div>
-
-        <!-- tab  -->
-        <!-- end tab  -->
       </main>
-
+      <!-- footer -->
       <footer id="site-footer">
         <div class="container">
-          <div
-            class="grid grid-cols-12 gap-x-5 gap-y-9 border-t border-gray-500/20 py-16 md:gap-x-6 lg:gap-x-7.5 lg:pt-[75px] lg:pb-[66px]"
-          >
-            <div class="col-span-full lg:col-span-2">
-              <a href="">
-                <img
-                  src="https://tr.rbxcdn.com/b46265f21b2f53eaa2bef11e8187c84a/512/512/Image/Png"
-                  alt=""
-              /></a>
-            </div>
-            <div class="col-span-full lg:col-span-6">
-              <div>
-                <nav>
-                  <ul
-                    class="grid grid-cols-9 gap-x-5 gap-y-4.5 text-sm font-bold md:gap-x-6 lg:gap-x-7.5"
-                  >
-                    <li class="col-span-3">
-                      <a
-                        class="text-gray-900 transition-colors hover:text-accent dark:text-white dark:hover:text-accent"
-                        href="index"
-                        >Home</a
-                      >
-                    </li>
-                    <li class="col-span-3">
-                      <a
-                        class="text-gray-900 transition-colors hover:text-accent dark:text-white dark:hover:text-accent"
-                        href="sponsors"
-                        >Sponsors</a
-                      >
-                    </li>
-                    <li class="col-span-3">
-                      <a
-                        class="text-gray-900 transition-colors hover:text-accent dark:text-white dark:hover:text-accent"
-                        href="contact"
-                        >Contact</a
-                      >
-                    </li>
-                    <li class="col-span-3">
-                      <a
-                        class="text-gray-900 transition-colors hover:text-accent dark:text-white dark:hover:text-accent"
-                        href="streams"
-                        >Streams</a
-                      >
-                    </li>
-                    <li class="col-span-3">
-                      <a
-                        class="text-gray-900 transition-colors hover:text-accent dark:text-white dark:hover:text-accent"
-                        href="about"
-                        >About</a
-                      >
-                    </li>
-                    <li class="col-span-3">
-                      <a
-                        class="text-gray-900 transition-colors hover:text-accent dark:text-white dark:hover:text-accent"
-                        href="shop-grid-3"
-                        >Shop</a
-                      >
-                    </li>
-                    <li class="col-span-3">
-                      <a
-                        class="text-gray-900 transition-colors hover:text-accent dark:text-white dark:hover:text-accent"
-                        href="blog"
-                        >Blog</a
-                      >
-                    </li>
-                    <li class="col-span-3">
-                      <a
-                        class="text-gray-900 transition-colors hover:text-accent dark:text-white dark:hover:text-accent"
-                        href="events"
-                        >Events</a
-                      >
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-            <div class="col-span-full lg:col-span-4">
-              <div class="pt-1">
-                <a
-                  href="#"
-                  class="inline-flex text-center font-bold leading-none transition-colors uppercase justify-center gap-x-3 py-4 px-4 md:py-[18px] lg:px-8 text-sm text-white bg-social-twitch hover:bg-social-twitch/90 w-full"
-                  ><svg class="h-[14px] w-[14px]" fill="currentColor">
-                    <use xlink:href="assets/img/social-icons.svg#discord"></use>
-                  </svg>
-                  Tham Gia Discord Ngay!</a
-                >
-                <div class="mt-6 text-sm">
-                  Hãy THam Gia Discord! Bạn sẽ nhận được huy hiệu phụ tuyệt vời,
-                  biểu tượng cảm xúc tùy chỉnh và sẽ được hỗ trợ riêng tư!
-                </div>
-              </div>
-            </div>
-          </div>
           <div>
             <h5
               class="flex items-center gap-x-7.5 text-xs font-bold uppercase leading-none text-gray-500/30 before:h-[1px] before:flex-1 before:bg-gray-500/20 after:h-[1px] after:flex-1 after:bg-gray-500/20"
             >
-              Vận Hành Bởi
+              Vận Hành Bởi Domain.Com
             </h5>
             <div
               class="grid grid-cols-12 gap-x-5 gap-y-6 py-16 md:gap-x-6 lg:gap-x-7.5 lg:py-16"
@@ -1047,7 +808,7 @@
                 <a href="#" class="group"
                   ><img
                     class="mx-auto opacity-20 transition-opacity group-hover:opacity-100"
-                    src="assets/img/str1/sponsor-1-sm.png"
+                    src="./image_shop/logogame/bladeball.png"
                     alt=""
                 /></a>
               </div>
@@ -1055,7 +816,7 @@
                 <a href="#" class="group"
                   ><img
                     class="mx-auto opacity-20 transition-opacity group-hover:opacity-100"
-                    src="assets/img/str1/sponsor-2-sm.png"
+                    src="./image_shop/logogame/bloxfruit.png"
                     alt=""
                 /></a>
               </div>
@@ -1063,7 +824,7 @@
                 <a href="#" class="group"
                   ><img
                     class="mx-auto opacity-20 transition-opacity group-hover:opacity-100"
-                    src="assets/img/str1/sponsor-3-sm.png"
+                    src="./image_shop/logogame/hazepiece.png"
                     alt=""
                 /></a>
               </div>
@@ -1071,7 +832,7 @@
                 <a href="#" class="group"
                   ><img
                     class="mx-auto opacity-20 transition-opacity group-hover:opacity-100"
-                    src="assets/img/str1/sponsor-4-sm.png"
+                    src="./image_shop/logogame/kinglegacy.png"
                     alt=""
                 /></a>
               </div>
@@ -1079,7 +840,7 @@
                 <a href="#" class="group"
                   ><img
                     class="mx-auto opacity-20 transition-opacity group-hover:opacity-100"
-                    src="assets/img/str1/sponsor-5-sm.png"
+                    src="./image_shop/logogame/fruit.png"
                     alt=""
                 /></a>
               </div>
@@ -1087,7 +848,7 @@
                 <a href="#" class="group"
                   ><img
                     class="mx-auto opacity-20 transition-opacity group-hover:opacity-100"
-                    src="assets/img/str1/sponsor-6-sm.png"
+                    src="./image_shop/logogame/shido.png"
                     alt=""
                 /></a>
               </div>
@@ -1129,7 +890,6 @@
         </li>
       </ul>
     </div>
-
     <dialog
       id="login-register"
       class="js-vv-modal mx-auto w-[470px] max-w-[90%] border-none bg-transparent p-0 backdrop:bg-gray-900/90"
@@ -1387,9 +1147,8 @@
     <script src="assets/vendors/common/swiper/js/swiper-bundle.min.js"></script>
     <!-- Template JS -->
     <script src="assets/js/common.js"></script>
-    <script src="../assets/js/str1/init.js"></script>
+    <script src="assets/js/str1/init.js"></script>
     <!-- y js  -->
     <script src="./assets/js/myjs.js"></script>
-    
   </body>
 </html>
