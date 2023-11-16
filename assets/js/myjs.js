@@ -1,5 +1,3 @@
-
-// Hàm để ẩn tất cả tab content và loại bỏ lớp "text-primary" khỏi tất cả tab
 function hideAllTabs() {
   var tabcontents = document.getElementsByClassName("tabcontent");
   for (var i = 0; i < tabcontents.length; i++) {
@@ -22,6 +20,3 @@ function depositTab(tabId) {
   );
   tablink.classList.add("text-primary"); // Thêm lớp "text-primary" cho tab chữ
 }
-
-
-

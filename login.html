@@ -689,586 +689,166 @@
 
       <main id="main-content" class="grow lg:pt-0">
         <div class="pb-20 md:pb-24 lg:pb-[130px]">
-          <div class="container">
-            <div class="grid grid-cols-12 gap-5 md:gap-6 lg:gap-7.5 mb-7.5">
-              <figure
-                class="col-span-full md:row-start-1 md:row-end-2 lg:col-span-8 lg:row-start-1 lg:row-end-3"
-              >
-                <div class="video-container">
-                  <a
-                    class="group relative block h-full overflow-hidden bg-gray-900"
-                    data-fancybox
-                    data-type="iframe"
-                    data-src="https://www.youtube.com/embed/hcza7QqfsGw?autoplay=1"
-                    data-options='{
-                    "width": 640,
-                    "height": 360
-                  }'
-                    href="javascript:;"
-                  >
-                    <img
-                      class="aspect-video w-full object-cover transition-all duration-300 group-hover:scale-110 group-hover:opacity-75 opacity-40"
-                      src="https://pbs.twimg.com/media/F5dGJeIW0AAZ-aV?format=jpg&amp;name=large"
-                      alt="Video Hướng Dẫn Sử Dụng"
-                    />
-                    <span
-                      class="absolute top-1/2 left-1/2 flex aspect-square -translate-x-2/4 -translate-y-2/4 items-center justify-center rounded-full bg-secondary w-[60px]"
+          <div
+            class="container backdrop:bg-gray-900/90 bg-transparent border-none js-vv-modal max-w-[90%] mx-auto p-0 w-[470px] bg-white dark:bg-gray-700 shadow-3xl overflow-y-auto"
+          >
+            <div class="tabs">
+              <nav class="tabs__header overflow-hidden">
+                <ul class="grid grid-cols-2 gap-x-[1px] dark:bg-gray-500/20">
+                  <li class="tabs__header-item group is-active">
+                    <a
+                      href="#"
+                      class="flex justify-center border-b bg-gray-100 dark:bg-gray-800 group-[.is-active]:bg-white border-gray-500/20 py-4 text-center font-bold text-gray-500/40 transition-colors hover:text-accent group-[.is-active]:text-accent dark:group-[.is-active]:border-gray-700 group-[.is-active]:border-white dark:group-[.is-active]:bg-gray-700"
+                      >Đăng Nhập</a
                     >
-                      <svg role="img" class="fill-white ml-[3px] h-5 w-4">
-                        <use
-                          xlink:href="./assets/img/yt1/sprite.svg#play"
-                        ></use>
-                      </svg>
-                    </span>
-                  </a>
+                  </li>
+                  <li class="tabs__header-item group flex-1">
+                    <a
+                      href="#"
+                      class="flex justify-center border-b bg-gray-100 dark:bg-gray-800 group-[.is-active]:bg-white border-gray-500/20 py-4 text-center font-bold text-gray-500/40 transition-colors hover:text-accent group-[.is-active]:text-accent dark:group-[.is-active]:border-gray-700 group-[.is-active]:border-white dark:border-gray-500/20 dark:group-[.is-active]:bg-gray-700"
+                      >Đăng Ký</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <div class="lg:px-10 lg:py-9 px-6 py-6 tabs__content">
+                <div class="tabs__content-item block">
+                  <form class="flex flex-col gap-y-6 lg:gap-y-8" action="#">
+                    <div>
+                      <label
+                        class="block text-sm font-bold uppercase text-gray-500 [&amp;:not(:empty)]:mb-2.5"
+                        >Tài Khoản</label
+                      >
+                      <input
+                        class="border group-[.is-success]:bg-input-success-dark group-[.is-error]:border-danger group-[.is-error]:bg-input-invalid group-[.is-error]:text-danger group-[.is-success]:pr-16 group-[.is-invalid]:pr-16 px-4 py-2 border-base bg-white/40 bg-[length:18px_18px,_38px_38px] bg-[position:right_16px_center,_right_6px_center] bg-no-repeat font-medium leading-8 tracking-tight text-gray-900 transition-all duration-150 placeholder:font-normal placeholder:text-gray-500/60 focus:border-accent focus:bg-white focus:text-gray-900 focus:outline-0 focus:ring-0 dark:border-gray-650 dark:group-[.is-success]:bg-input-success dark:bg-gray-900/40 dark:text-white dark:placeholder:text-gray-500/80 dark:focus:border-accent dark:focus:bg-gray-900 w-full"
+                        value=""
+                        placeholder=""
+                      />
+                      <p
+                        class="group-[.is-error]:block mt-2 hidden text-xs text-danger"
+                      ></p>
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-bold uppercase text-gray-500 [&amp;:not(:empty)]:mb-2.5"
+                        >Mật Khẩu</label
+                      >
+                      <input
+                        class="group-[.is-success]:bg-input-success-dark group-[.is-error]:border-danger group-[.is-error]:bg-input-invalid group-[.is-error]:text-danger group-[.is-success]:pr-16 group-[.is-invalid]:pr-16 px-4 py-2 border-base bg-white/40 bg-[length:18px_18px,_38px_38px] bg-[position:right_16px_center,_right_6px_center] bg-no-repeat font-medium leading-8 tracking-tight text-gray-900 transition-all duration-150 placeholder:font-normal placeholder:text-gray-500/60 focus:border-accent focus:bg-white focus:text-gray-900 focus:outline-0 focus:ring-0 dark:border-gray-650 dark:group-[.is-success]:bg-input-success dark:bg-gray-900/40 dark:text-white dark:placeholder:text-gray-500/80 dark:focus:border-accent dark:focus:bg-gray-900 w-full"
+                        type="password"
+                        value=""
+                        placeholder=""
+                      />
+                      <p
+                        class="group-[.is-error]:block mt-2 hidden text-xs text-danger"
+                      ></p>
+                    </div>
+                    <div class="flex justify-between flex-wrap gap-y-4">
+                      <div>
+                        <label
+                          class="flex items-center gap-x-3 hover:cursor-pointer"
+                          for="remember-me"
+                          ><input
+                            name="remember-me"
+                            id="remember-me"
+                            type="checkbox"
+                            class="border-gray-650 dark:border-gray-650 h-4 w-4 bg-white checked:border-accent checked:bg-white checked:text-accent checked:hover:border-accent checked:hover:bg-white dark:bg-gray-900 dark:checked:border-accent dark:checked:hover:border-accent dark:checked:hover:bg-gray-900"
+                          />
+                          <span
+                            class="text-xs font-bold uppercase text-gray-900 dark:text-white"
+                            >Ghi Nhớ Tài Khoản</span
+                          ></label
+                        >
+                      </div>
+                      <a
+                        href="#"
+                        class="text-xs font-bold uppercase text-primary dark:text-white hover:text-accent dark:hover:text-accent transition-colors"
+                        >Quên Mật Khẩu?</a
+                      >
+                    </div>
+                    <div class="mt-2">
+                      <button
+                        type="submit"
+                        class="inline-flex text-center font-bold leading-none transition-colors uppercase justify-center gap-x-3 py-4 px-4 md:py-[18px] lg:px-8 text-sm text-gray-900 bg-accent hover:bg-accent/90 w-full"
+                      >
+                        Login to your account
+                      </button>
+                    </div>
+                  </form>
                 </div>
-              </figure>
-
-              <div
-                class="bg-white col-span-full dark:bg-gray-800 lg:col-span-4 lg:px-8 lg:py-7 md:px-6 md:py-6 px-5 py-5 self-start shadow-3xl sm:px-6 top-8 tracking-tight xl:py-9"
-              >
-                <div class="flex font-bold mb-3.5">
-                  <div
-                    class="w-full cursor-pointer bg-trueGray-900 tablinks"
-                    onclick="depositTab('nap')"
-                  >
-                    <h2 class="hover:text-accent mx-auto px-3 text-center">
-                      NẠP THẺ
-                    </h2>
-                  </div>
-                  <div
-                    class="w-full cursor-pointer bg-trueGray-900 tablinks"
-                    onclick="depositTab('momo')"
-                  >
-                    <h2 class="hover:text-accent mx-auto px-3 text-center">
-                      MOMO/ATM
-                    </h2>
-                  </div>
-                  <div
-                    class="w-full cursor-pointer bg-trueGray-900 tablinks"
-                    onclick="depositTab('top')"
-                  >
-                    <h2 class="hover:text-accent mx-auto px-3 text-center">
-                      TOP NẠP
-                    </h2>
-                  </div>
+                <div class="tabs__content-item hidden">
+                  <form class="flex flex-col gap-y-6 lg:gap-y-8" action="#">
+                    <div class="group is-success">
+                      <label
+                        class="block text-sm font-bold uppercase text-gray-500 [&amp;:not(:empty)]:mb-2.5"
+                        >Tài Khoản</label
+                      >
+                      <input
+                        class="border [.is-success]:bg-input-success-dark group-[.is-error]:border-danger group-[.is-error]:bg-input-invalid group-[.is-error]:text-danger group-[.is-success]:pr-16 group-[.is-invalid]:pr-16 px-4 py-2 border-base bg-white/40 bg-[length:18px_18px,_38px_38px] bg-[position:right_16px_center,_right_6px_center] bg-no-repeat font-medium leading-8 tracking-tight text-gray-900 transition-all duration-150 placeholder:font-normal placeholder:text-gray-500/60 focus:border-accent focus:bg-white focus:text-gray-900 focus:outline-0 focus:ring-0 dark:border-gray-650 dark:group-[.is-success]:bg-input-success dark:bg-gray-900/40 dark:text-white dark:placeholder:text-gray-500/80 dark:focus:border-accent dark:focus:bg-gray-900 w-full"
+                        value=""
+                        placeholder="Nhập Tên Tài Khoản"
+                      />
+                      <p
+                        class="group-[.is-error]:block mt-2 hidden text-xs text-danger"
+                      ></p>
+                    </div>
+                    <div class="group is-success">
+                      <label
+                        class="block text-sm font-bold uppercase text-gray-500 [&amp;:not(:empty)]:mb-2.5"
+                        >Enail</label
+                      >
+                      <input
+                        class="group-[.is-success]:bg-input-success-dark group-[.is-error]:border-danger group-[.is-error]:bg-input-invalid group-[.is-error]:text-danger group-[.is-success]:pr-16 group-[.is-invalid]:pr-16 px-4 py-2 border-base bg-white/40 bg-[length:18px_18px,_38px_38px] bg-[position:right_16px_center,_right_6px_center] bg-no-repeat font-medium leading-8 tracking-tight text-gray-900 transition-all duration-150 placeholder:font-normal placeholder:text-gray-500/60 focus:border-accent focus:bg-white focus:text-gray-900 focus:outline-0 focus:ring-0 dark:border-gray-650 dark:group-[.is-success]:bg-input-success dark:bg-gray-900/40 dark:text-white dark:placeholder:text-gray-500/80 dark:focus:border-accent dark:focus:bg-gray-900 w-full"
+                        type="email"
+                        value=""
+                        placeholder="email@gmail.com"
+                      />
+                      <p
+                        class="group-[.is-error]:block mt-2 hidden text-xs text-danger"
+                      ></p>
+                    </div>
+                    <div class="group is-error">
+                      <label
+                        class="block text-sm font-bold uppercase text-gray-500 [&amp;:not(:empty)]:mb-2.5"
+                        >Mật Khẩu</label
+                      >
+                      <input
+                        class="group-[.is-success]:bg-input-success-dark group-[.is-error]:border-danger group-[.is-error]:bg-input-invalid group-[.is-error]:text-danger group-[.is-success]:pr-16 group-[.is-invalid]:pr-16 px-4 py-2 border-base bg-white/40 bg-[length:18px_18px,_38px_38px] bg-[position:right_16px_center,_right_6px_center] bg-no-repeat font-medium leading-8 tracking-tight text-gray-900 transition-all duration-150 placeholder:font-normal placeholder:text-gray-500/60 focus:border-accent focus:bg-white focus:text-gray-900 focus:outline-0 focus:ring-0 dark:border-gray-650 dark:group-[.is-success]:bg-input-success dark:bg-gray-900/40 dark:text-white dark:placeholder:text-gray-500/80 dark:focus:border-accent dark:focus:bg-gray-900 w-full"
+                        type="password"
+                        placeholder=""
+                      />
+                      <p
+                        class="group-[.is-error]:block mt-2 hidden text-xs text-danger"
+                      >
+                        Mật khẩu cần ít nhất 1 số
+                      </p>
+                    </div>
+                    <div>
+                      <label
+                        class="block text-sm font-bold uppercase text-gray-500 [&amp;:not(:empty)]:mb-2.5"
+                        for="user-password-repeat"
+                        >Nhập Lại Mật Khẩu</label
+                      >
+                      <input
+                        class="group-[.is-success]:bg-input-success-dark group-[.is-error]:border-danger group-[.is-error]:bg-input-invalid group-[.is-error]:text-danger group-[.is-success]:pr-16 group-[.is-invalid]:pr-16 px-4 py-2 border-base bg-white/40 bg-[length:18px_18px,_38px_38px] bg-[position:right_16px_center,_right_6px_center] bg-no-repeat font-medium leading-8 tracking-tight text-gray-900 transition-all duration-150 placeholder:font-normal placeholder:text-gray-500/60 focus:border-accent focus:bg-white focus:text-gray-900 focus:outline-0 focus:ring-0 dark:border-gray-650 dark:group-[.is-success]:bg-input-success dark:bg-gray-900/40 dark:text-white dark:placeholder:text-gray-500/80 dark:focus:border-accent dark:focus:bg-gray-900 w-full"
+                        type="password"
+                        value=""
+                        placeholder=""
+                      />
+                      <p
+                        class="group-[.is-error]:block mt-2 hidden text-xs text-danger"
+                      ></p>
+                    </div>
+                    <div class="mt-2">
+                      <button
+                        type="submit"
+                        class="inline-flex text-center font-bold leading-none transition-colors uppercase justify-center gap-x-3 py-4 px-4 md:py-[18px] lg:px-8 text-sm text-white bg-primary hover:bg-primary/90 w-full"
+                      >
+                        Tạo tài khoản
+                      </button>
+                    </div>
+                  </form>
                 </div>
-                <span class="tabcontent" id="nap" style="display: block">
-                  <div class="col-span-full">
-                    <select
-                      class="bg-[length:10px_6px] bg-[position:right_18px_center] bg-caret bg-white/40 border-base dark:bg-caret-white dark:bg-gray-900/40 dark:border-gray-650 dark:focus:bg-gray-900 dark:focus:border-accent dark:focus:text-white dark:placeholder:text-gray-500/80 dark:text-white duration-150 focus:border-accent focus:outline-0 focus:ring-0 focus:text-gray-900 font-medium h-12.5 hover:cursor-pointer px-4 text-gray-900 transition-all w-full"
-                      name="shipping-country"
-                      id="shipping-country"
-                    >
-                      <option value="" selected="">Chọn Loại Thẻ</option>
-                      <option value="VIETTEL">Viettel</option>
-                      <option value="VINAPHONE">Vinaphone</option>
-                      <option value="MOBIFONE">Mobifone</option>
-                      <option value="VNMOBI">Vietnammobi</option>
-                      <option value="ZING">Zing</option>
-                      <option value="GATE">GATE</option>
-                      <option value="VCOIN">Vcoin</option>
-                    </select>
-                  </div>
-                  <div class="col-span-full pt-2">
-                    <select
-                      class="w-full border-base bg-white/40 px-4 h-12.5 font-medium text-gray-900 transition-all duration-150 bg-caret bg-[length:10px_6px] bg-[position:right_18px_center] focus:border-accent focus:outline-0 focus:ring-0 focus:text-gray-900 hover:cursor-pointer dark:border-gray-650 dark:bg-gray-900/40 dark:text-white dark:placeholder:text-gray-500/80 dark:focus:border-accent dark:focus:text-white dark:bg-caret-white dark:focus:bg-gray-900"
-                      name="shipping-city"
-                      id="shipping-city"
-                    >
-                      <option value="" selected="">Chọn Mệnh Giá</option>
-                      <option value="10000">10,000 VND</option>
-                      <option value="20000">20,000 VND</option>
-                      <option value="30000">30,000 VND</option>
-                      <option value="50000">50,000 VND</option>
-                      <option value="100000">100,000 VND</option>
-                      <option value="200000">200,000 VND</option>
-                      <option value="300000">300,000 VND</option>
-                      <option value="500000">500,000 VND</option>
-                      <option value="1000000">1,000,000 VND</option>
-                    </select>
-                  </div>
-                  <div class="col-span-full mt-2">
-                    <input
-                      class="group-[.is-success]:bg-input-success-dark group-[.is-error]:border-danger group-[.is-error]:bg-input-invalid group-[.is-error]:text-danger group-[.is-success]:pr-16 group-[.is-invalid]:pr-16 px-4 py-2 border-base bg-white/40 bg-[length:18px_18px,_38px_38px] bg-[position:right_16px_center,_right_6px_center] bg-no-repeat font-medium leading-8 tracking-tight text-gray-900 transition-all duration-150 placeholder:font-normal placeholder:text-gray-500/60 focus:border-accent focus:bg-white focus:text-gray-900 focus:outline-0 focus:ring-0 dark:border-gray-650 dark:group-[.is-success]:bg-input-success dark:bg-gray-900/40 dark:text-white dark:placeholder:text-gray-500/80 dark:focus:border-accent dark:focus:bg-gray-900 w-full mb-3"
-                      placeholder="Seri Thẻ Cào"
-                      id="seri"
-                      name="serial"
-                      type="text"
-                    />
-                  </div>
-                  <div class="col-span-full">
-                    <input
-                      class="group-[.is-success]:bg-input-success-dark group-[.is-error]:border-danger group-[.is-error]:bg-input-invalid group-[.is-error]:text-danger group-[.is-success]:pr-16 group-[.is-invalid]:pr-16 px-4 py-2 border-base bg-white/40 bg-[length:18px_18px,_38px_38px] bg-[position:right_16px_center,_right_6px_center] bg-no-repeat font-medium leading-8 tracking-tight text-gray-900 transition-all duration-150 placeholder:font-normal placeholder:text-gray-500/60 focus:border-accent focus:bg-white focus:text-gray-900 focus:outline-0 focus:ring-0 dark:border-gray-650 dark:group-[.is-success]:bg-input-success dark:bg-gray-900/40 dark:text-white dark:placeholder:text-gray-500/80 dark:focus:border-accent dark:focus:bg-gray-900 w-full mb-3"
-                      placeholder="Mã Thẻ Cào"
-                      id="pin"
-                      name="code"
-                      type="text"
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    class="bg-primary font-bold hover:bg-primary/90 hover:cursor-pointer leading-tight lg:px-12 py-5 text-white tracking-tight transition-colors w-full"
-                  >
-                    Nạp Ngay
-                  </button>
-                </span>
-                <span class="tabcontent" id="momo" style="display: none">
-                  <div class="col-span-full pt-2">
-                    <select
-                      class="w-full border-base bg-white/40 px-4 h-12.5 font-medium text-gray-900 transition-all duration-150 bg-caret bg-[length:10px_6px] bg-[position:right_18px_center] focus:border-accent focus:outline-0 focus:ring-0 focus:text-gray-900 hover:cursor-pointer dark:border-gray-650 dark:bg-gray-900/40 dark:text-white dark:placeholder:text-gray-500/80 dark:focus:border-accent dark:focus:text-white dark:bg-caret-white dark:focus:bg-gray-900"
-                      name="shipping-city"
-                      id="shipping-city"
-                    >
-                      <option value="0">Chọn Hình Thức Nạp</option>
-                      <option value="1">Momo</option>
-                      <option value="2">Ngân Hàng</option>
-                    </select>
-                  </div>
-                  <div class="col-span-full mt-2">
-                    <input
-                      class="group-[.is-success]:bg-input-success-dark group-[.is-error]:border-danger group-[.is-error]:bg-input-invalid group-[.is-error]:text-danger group-[.is-success]:pr-16 group-[.is-invalid]:pr-16 px-4 py-2 border-base bg-white/40 bg-[length:18px_18px,_38px_38px] bg-[position:right_16px_center,_right_6px_center] bg-no-repeat font-medium leading-8 tracking-tight text-gray-900 transition-all duration-150 placeholder:font-normal placeholder:text-gray-500/60 focus:border-accent focus:bg-white focus:text-gray-900 focus:outline-0 focus:ring-0 dark:border-gray-650 dark:group-[.is-success]:bg-input-success dark:bg-gray-900/40 dark:text-white dark:placeholder:text-gray-500/80 dark:focus:border-accent dark:focus:bg-gray-900 w-full mb-3"
-                      type="number"
-                      value=""
-                      placeholder="Nhập số tiền muốn nạp"
-                    />
-                  </div>
-
-                  <button
-                    type="submit"
-                    class="bg-primary font-bold hover:bg-primary/90 hover:cursor-pointer leading-tight lg:px-12 py-5 text-white tracking-tight transition-colors w-full"
-                  >
-                    Tạo Hóa Đơn Nạp
-                  </button>
-                </span>
-                <span class="tabcontent" id="top" style="display: none">
-                  <div class="col-span-full pt-2">
-                    <a
-                      class="bg-[#393d58] grid gap-x-2.5 hover:-translate-y-2 hover:shadow-md items-center p-4 py-[13px] shadow-2xl text-white transition-transform"
-                      style="grid-template-columns: 1fr 1fr"
-                    >
-                      <div class="flex font-bold">
-                        <span>1. Username****</span>
-                      </div>
-                      <span class="text-[#fffac3]" style="text-align: right"
-                        >+540,000 VNĐ</span
-                      >
-                    </a>
-                  </div>
-                  <div class="col-span-full pt-2">
-                    <a
-                      class="bg-[#393d58] grid gap-x-2.5 hover:-translate-y-2 hover:shadow-md items-center p-4 py-[13px] shadow-2xl text-white transition-transform"
-                      style="grid-template-columns: 1fr 1fr"
-                    >
-                      <div class="flex font-bold">
-                        <span>1. Username****</span>
-                      </div>
-                      <span class="text-[#fffac3]" style="text-align: right"
-                        >+540,000 VNĐ</span
-                      >
-                    </a>
-                  </div>
-                  <div class="col-span-full pt-2">
-                    <a
-                      class="bg-[#393d58] grid gap-x-2.5 hover:-translate-y-2 hover:shadow-md items-center p-4 py-[13px] shadow-2xl text-white transition-transform"
-                      style="grid-template-columns: 1fr 1fr"
-                    >
-                      <div class="flex font-bold">
-                        <span>1. Username****</span>
-                      </div>
-                      <span class="text-[#fffac3]" style="text-align: right"
-                        >+540,000 VNĐ</span
-                      >
-                    </a>
-                  </div>
-                  <div class="col-span-full pt-2">
-                    <a
-                      class="bg-[#393d58] grid gap-x-2.5 hover:-translate-y-2 hover:shadow-md items-center p-4 py-[13px] shadow-2xl text-white transition-transform"
-                      style="grid-template-columns: 1fr 1fr"
-                    >
-                      <div class="flex font-bold">
-                        <span>1. Username****</span>
-                      </div>
-                      <span class="text-[#fffac3]" style="text-align: right"
-                        >+540,000 VNĐ</span
-                      >
-                    </a>
-                  </div>
-                  <div class="col-span-full pt-2">
-                    <a
-                      class="bg-[#393d58] grid gap-x-2.5 hover:-translate-y-2 hover:shadow-md items-center p-4 py-[13px] shadow-2xl text-white transition-transform"
-                      style="grid-template-columns: 1fr 1fr"
-                    >
-                      <div class="flex font-bold">
-                        <span>1. Username****</span>
-                      </div>
-                      <span class="text-[#fffac3]" style="text-align: right"
-                        >+540,000 VNĐ</span
-                      >
-                    </a>
-                  </div>
-                </span>
-              </div>
-            </div>
-            <div class="grid grid-cols-12 gap-5 md:gap-6 lg:gap-7.5">
-              <div class="col-span-full md:col-span-6">
-                <div
-                  class="bg-white col-span-full dark:bg-gray-800 flex items-center mt-4 px-3 py-3 rounded-lg shadow-2xl shadow-lg"
-                >
-                  <i class="fa-bell fa-regular text-primary"></i>
-                  <marquee class="font-bold text-primary">
-                    Thông báo tới khách hàng....
-                  </marquee>
-                </div>
-              </div>
-              <div class="col-span-full md:col-span-6">
-                <div
-                  class="bg-white col-span-full dark:bg-gray-800 flex items-center mt-4 px-3 py-3 rounded-lg shadow-2xl shadow-lg"
-                >
-                  <i class="fa-cart-shopping fa-solid text-primary"></i>
-                  <marquee class="font-bold text-primary">
-                    <span class="">Khách Hàng A</span> Vừa Mua Tài Khoản Acb Xyz
-                  </marquee>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- tab  -->
-        <!-- end tab  -->
-
-        <div class="pb-20 md:pb-24 lg:pb-[120px]">
-          <div class="container">
-            <div
-              class="mb-10 md:mb-12 lg:mb-16 xl:mb-20 flex flex-col gap-y-6 sm:flex-row sm:justify-between sm:items-center"
-            >
-              <h2
-                class="title-website text-2.5xl font-bold text-gray-900 before:text-accent before:content-['.'] dark:text-white sm:text-3.5xl md:text-4xl lg:text-[62px] lg:leading-none"
-              >
-                Danh Sách Dịch Vụ
-              </h2>
-            </div>
-            <div
-              class="gap-x-6 gap-y-9 grid grid-cols-12 lg:gap-x-7.5 md:gap-x-6"
-            >
-              <div class="col-span-6 lg:col-span-3 md:col-span-4 sm:col-span-6">
-                <figure class="group mb-5.5 overflow-hidden relative">
-                  <img
-                    class="aspect-[27/34] duration-300 object-cover transition-transform w-full lazyload"
-                    src="./image_shop/loading.gif"
-                    data-src="./image_shop/TAIKHOAN.png"
-                    alt="Đây là danh mục"
-                  />
-                  <div
-                    class="absolute bg-white dark:bg-gray-900 group-hover:opacity-90 inset-0 opacity-0 transition-opacity"
-                  ></div>
-                  <div
-                    class="flex absolute justify-center left-0 right-0 top-1/2 -translate-y-1/2 scale-90 [@media(hover:hover)]:opacity-0 [@media(hover:hover)]:transition-all [@media(hover:hover)]:duration-300 [@media(hover:hover)]:group-hover:scale-100 [@media(hover:hover)]:group-hover:opacity-100"
-                  >
-                    <a href="shop-nick.html">
-                      <img
-                        class="font-bold gap-x-3 inline-flex justify-center leading-none lg:px-8 md:py-[18px] px-4 py-4 text-center text-gray-900 text-sm transition-colors uppercase"
-                        src="./image_shop/button.png"
-                      />
-                    </a>
-                  </div>
-                </figure>
-              </div>
-              <div class="col-span-6 lg:col-span-3 md:col-span-4 sm:col-span-6">
-                <figure class="group mb-5.5 overflow-hidden relative">
-                  <img
-                    class="aspect-[27/34] duration-300 object-cover transition-transform w-full lazyload"
-                    src="./image_shop/loading.gif"
-                    data-src="./image_shop/gamepass.png"
-                    alt="Đây là danh mục"
-                  />
-                  <div
-                    class="absolute bg-white dark:bg-gray-900 group-hover:opacity-90 inset-0 opacity-0 transition-opacity"
-                  ></div>
-                  <div
-                    class="flex absolute justify-center left-0 right-0 top-1/2 -translate-y-1/2 scale-90 [@media(hover:hover)]:opacity-0 [@media(hover:hover)]:transition-all [@media(hover:hover)]:duration-300 [@media(hover:hover)]:group-hover:scale-100 [@media(hover:hover)]:group-hover:opacity-100"
-                  >
-                    <a href="#">
-                      <img
-                        class="font-bold gap-x-3 inline-flex justify-center lazyLoad leading-none lg:px-8 md:py-[18px] px-4 py-4 text-center text-gray-900 text-sm transition-colors uppercase"
-                        data-src="./image_shop/button.png"
-                        style="height: auto"
-                        src="./image_shop/button.png"
-                      />
-                    </a>
-                  </div>
-                </figure>
-              </div>
-              <div class="col-span-6 lg:col-span-3 md:col-span-4 sm:col-span-6">
-                <figure class="group mb-5.5 overflow-hidden relative">
-                  <img
-                    class="aspect-[27/34] duration-300 object-cover transition-transform w-full lazyload"
-                    src="./image_shop/loading.gif"
-                    data-src="./image_shop/ROBUX.png"
-                    alt="Đây là danh mục"
-                  />
-                  <div
-                    class="absolute bg-white dark:bg-gray-900 group-hover:opacity-90 inset-0 opacity-0 transition-opacity"
-                  ></div>
-                  <div
-                    class="flex absolute justify-center left-0 right-0 top-1/2 -translate-y-1/2 scale-90 [@media(hover:hover)]:opacity-0 [@media(hover:hover)]:transition-all [@media(hover:hover)]:duration-300 [@media(hover:hover)]:group-hover:scale-100 [@media(hover:hover)]:group-hover:opacity-100"
-                  >
-                    <a href="#">
-                      <img
-                        class="font-bold gap-x-3 inline-flex justify-center lazyLoad leading-none lg:px-8 md:py-[18px] px-4 py-4 text-center text-gray-900 text-sm transition-colors uppercase"
-                        data-src="./image_shop/button.png"
-                        style="height: auto"
-                        src="./image_shop/button.png"
-                      />
-                    </a>
-                  </div>
-                </figure>
-              </div>
-              <div class="col-span-6 lg:col-span-3 md:col-span-4 sm:col-span-6">
-                <figure class="group mb-5.5 overflow-hidden relative">
-                  <img
-                    class="aspect-[27/34] duration-300 object-cover transition-transform w-full lazyload"
-                    src="./image_shop/loading.gif"
-                    data-src="./image_shop/CAYTHUE.png"
-                    alt="Đây là danh mục"
-                  />
-                  <div
-                    class="absolute bg-white dark:bg-gray-900 group-hover:opacity-90 inset-0 opacity-0 transition-opacity"
-                  ></div>
-                  <div
-                    class="flex absolute justify-center left-0 right-0 top-1/2 -translate-y-1/2 scale-90 [@media(hover:hover)]:opacity-0 [@media(hover:hover)]:transition-all [@media(hover:hover)]:duration-300 [@media(hover:hover)]:group-hover:scale-100 [@media(hover:hover)]:group-hover:opacity-100"
-                  >
-                    <a href="#">
-                      <img
-                        class="font-bold gap-x-3 inline-flex justify-center lazyLoad leading-none lg:px-8 md:py-[18px] px-4 py-4 text-center text-gray-900 text-sm transition-colors uppercase"
-                        data-src="./image_shop/button.png"
-                        style="height: auto"
-                        src="./image_shop/button.png"
-                      />
-                    </a>
-                  </div>
-                </figure>
-              </div>
-              <div class="col-span-6 lg:col-span-3 md:col-span-4 sm:col-span-6">
-                <figure class="group mb-5.5 overflow-hidden relative">
-                  <img
-                    class="aspect-[27/34] duration-300 object-cover transition-transform w-full lazyload"
-                    src="./image_shop/loading.gif"
-                    data-src="./image_shop/DF.png"
-                    alt="Đây là danh mục"
-                  />
-                  <div
-                    class="absolute bg-white dark:bg-gray-900 group-hover:opacity-90 inset-0 opacity-0 transition-opacity"
-                  ></div>
-                  <div
-                    class="flex absolute justify-center left-0 right-0 top-1/2 -translate-y-1/2 scale-90 [@media(hover:hover)]:opacity-0 [@media(hover:hover)]:transition-all [@media(hover:hover)]:duration-300 [@media(hover:hover)]:group-hover:scale-100 [@media(hover:hover)]:group-hover:opacity-100"
-                  >
-                    <a href="#">
-                      <img
-                        class="font-bold gap-x-3 inline-flex justify-center lazyLoad leading-none lg:px-8 md:py-[18px] px-4 py-4 text-center text-gray-900 text-sm transition-colors uppercase"
-                        data-src="./image_shop/button.png"
-                        style="height: auto"
-                        src="./image_shop/button.png"
-                      />
-                    </a>
-                  </div>
-                </figure>
-              </div>
-              <div class="col-span-6 lg:col-span-3 md:col-span-4 sm:col-span-6">
-                <figure class="group mb-5.5 overflow-hidden relative">
-                  <img
-                    class="aspect-[27/34] duration-300 object-cover transition-transform w-full lazyload"
-                    src="./image_shop/loading.gif"
-                    data-src="./image_shop/DFBLOX.png"
-                    alt="Đây là danh mục"
-                  />
-                  <div
-                    class="absolute bg-white dark:bg-gray-900 group-hover:opacity-90 inset-0 opacity-0 transition-opacity"
-                  ></div>
-                  <div
-                    class="flex absolute justify-center left-0 right-0 top-1/2 -translate-y-1/2 scale-90 [@media(hover:hover)]:opacity-0 [@media(hover:hover)]:transition-all [@media(hover:hover)]:duration-300 [@media(hover:hover)]:group-hover:scale-100 [@media(hover:hover)]:group-hover:opacity-100"
-                  >
-                    <a href="#">
-                      <img
-                        class="font-bold gap-x-3 inline-flex justify-center lazyLoad leading-none lg:px-8 md:py-[18px] px-4 py-4 text-center text-gray-900 text-sm transition-colors uppercase"
-                        data-src="./image_shop/button.png"
-                        style="height: auto"
-                        src="./image_shop/button.png"
-                      />
-                    </a>
-                  </div>
-                </figure>
-              </div>
-
-              <div class="col-span-6 lg:col-span-3 md:col-span-4 sm:col-span-6">
-                <figure class="group mb-5.5 overflow-hidden relative">
-                  <img
-                    class="aspect-[27/34] duration-300 object-cover transition-transform w-full lazyload"
-                    src="./image_shop/loading.gif"
-                    data-src="./image_shop/BLOXFRUIT.png"
-                    alt="Đây là danh mục"
-                  />
-                  <div
-                    class="absolute bg-white dark:bg-gray-900 group-hover:opacity-90 inset-0 opacity-0 transition-opacity"
-                  ></div>
-                  <div
-                    class="flex absolute justify-center left-0 right-0 top-1/2 -translate-y-1/2 scale-90 [@media(hover:hover)]:opacity-0 [@media(hover:hover)]:transition-all [@media(hover:hover)]:duration-300 [@media(hover:hover)]:group-hover:scale-100 [@media(hover:hover)]:group-hover:opacity-100"
-                  >
-                    <a href="#">
-                      <img
-                        class="font-bold gap-x-3 inline-flex justify-center lazyLoad leading-none lg:px-8 md:py-[18px] px-4 py-4 text-center text-gray-900 text-sm transition-colors uppercase"
-                        data-src="./image_shop/button.png"
-                        style="height: auto"
-                        src="./image_shop/button.png"
-                      />
-                    </a>
-                  </div>
-                </figure>
-              </div>
-              <div class="col-span-6 lg:col-span-3 md:col-span-4 sm:col-span-6">
-                <figure class="group mb-5.5 overflow-hidden relative">
-                  <img
-                    class="aspect-[27/34] duration-300 object-cover transition-transform w-full lazyload"
-                    src="./image_shop/loading.gif"
-                    data-src="./image_shop//NHANQUA.png"
-                    alt="Đây là danh mục"
-                  />
-                  <div
-                    class="absolute bg-white dark:bg-gray-900 group-hover:opacity-90 inset-0 opacity-0 transition-opacity"
-                  ></div>
-                  <div
-                    class="flex absolute justify-center left-0 right-0 top-1/2 -translate-y-1/2 scale-90 [@media(hover:hover)]:opacity-0 [@media(hover:hover)]:transition-all [@media(hover:hover)]:duration-300 [@media(hover:hover)]:group-hover:scale-100 [@media(hover:hover)]:group-hover:opacity-100"
-                  >
-                    <a href="#">
-                      <img
-                        class="font-bold gap-x-3 inline-flex justify-center lazyLoad leading-none lg:px-8 md:py-[18px] px-4 py-4 text-center text-gray-900 text-sm transition-colors uppercase"
-                        data-src="./image_shop/button.png"
-                        style="height: auto"
-                        src="./image_shop/button.png"
-                      />
-                    </a>
-                  </div>
-                </figure>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- end dịch vụ  -->
-        <!-- trò chơi  -->
-        <div class="pb-20 md:pb-24 lg:pb-[120px]">
-          <div class="container">
-            <div
-              class="mb-10 md:mb-12 lg:mb-16 xl:mb-20 flex flex-col gap-y-6 sm:flex-row sm:justify-between sm:items-center"
-            >
-              <h2
-                class="title-website text-2.5xl font-bold text-gray-900 before:text-accent before:content-['.'] dark:text-white sm:text-3.5xl md:text-4xl lg:text-[62px] lg:leading-none"
-              >
-                Danh Sách Trò Chơi
-              </h2>
-            </div>
-            <div
-              class="gap-x-6 gap-y-9 grid grid-cols-12 lg:gap-x-7.5 md:gap-x-6"
-            >
-              <div class="col-span-6 lg:col-span-3 md:col-span-4 sm:col-span-6">
-                <figure class="group mb-5.5 overflow-hidden relative">
-                  <img
-                    class="aspect-[27/34] duration-300 object-cover transition-transform w-full lazyload"
-                    src="./image_shop/loading.gif"
-                    data-src="./image_shop/DF.png"
-                    alt="Đây là danh mục"
-                  />
-                  <div
-                    class="absolute bg-white dark:bg-gray-900 group-hover:opacity-90 inset-0 opacity-0 transition-opacity"
-                  ></div>
-                  <div
-                    class="flex absolute justify-center left-0 right-0 top-1/2 -translate-y-1/2 scale-90 [@media(hover:hover)]:opacity-0 [@media(hover:hover)]:transition-all [@media(hover:hover)]:duration-300 [@media(hover:hover)]:group-hover:scale-100 [@media(hover:hover)]:group-hover:opacity-100"
-                  >
-                    <a href="#">
-                      <img
-                        class="font-bold gap-x-3 inline-flex justify-center lazyLoad leading-none lg:px-8 md:py-[18px] px-4 py-4 text-center text-gray-900 text-sm transition-colors uppercase"
-                        data-src="./image_shop/button.png"
-                        style="height: auto"
-                        src="./image_shop/button.png"
-                      />
-                    </a>
-                  </div>
-                </figure>
-              </div>
-              <div class="col-span-6 lg:col-span-3 md:col-span-4 sm:col-span-6">
-                <figure class="group mb-5.5 overflow-hidden relative">
-                  <img
-                    class="aspect-[27/34] duration-300 object-cover transition-transform w-full lazyload"
-                    src="./image_shop/loading.gif"
-                    data-src="./image_shop/gamepass.png"
-                    alt="Đây là danh mục"
-                  />
-                  <div
-                    class="absolute bg-white dark:bg-gray-900 group-hover:opacity-90 inset-0 opacity-0 transition-opacity"
-                  ></div>
-                  <div
-                    class="flex absolute justify-center left-0 right-0 top-1/2 -translate-y-1/2 scale-90 [@media(hover:hover)]:opacity-0 [@media(hover:hover)]:transition-all [@media(hover:hover)]:duration-300 [@media(hover:hover)]:group-hover:scale-100 [@media(hover:hover)]:group-hover:opacity-100"
-                  >
-                    <a href="#">
-                      <img
-                        class="font-bold gap-x-3 inline-flex justify-center lazyLoad leading-none lg:px-8 md:py-[18px] px-4 py-4 text-center text-gray-900 text-sm transition-colors uppercase"
-                        data-src="./image_shop/button.png"
-                        style="height: auto"
-                        src="./image_shop/button.png"
-                      />
-                    </a>
-                  </div>
-                </figure>
-              </div>
-              <div class="col-span-6 lg:col-span-3 md:col-span-4 sm:col-span-6">
-                <figure class="group mb-5.5 overflow-hidden relative">
-                  <img
-                    class="aspect-[27/34] duration-300 object-cover transition-transform w-full lazyload"
-                    src="./image_shop/loading.gif"
-                    data-src="./image_shop/ROBUX.png"
-                    alt="Đây là danh mục"
-                  />
-                  <div
-                    class="absolute bg-white dark:bg-gray-900 group-hover:opacity-90 inset-0 opacity-0 transition-opacity"
-                  ></div>
-                  <div
-                    class="flex absolute justify-center left-0 right-0 top-1/2 -translate-y-1/2 scale-90 [@media(hover:hover)]:opacity-0 [@media(hover:hover)]:transition-all [@media(hover:hover)]:duration-300 [@media(hover:hover)]:group-hover:scale-100 [@media(hover:hover)]:group-hover:opacity-100"
-                  >
-                    <a href="#">
-                      <img
-                        class="font-bold gap-x-3 inline-flex justify-center lazyLoad leading-none lg:px-8 md:py-[18px] px-4 py-4 text-center text-gray-900 text-sm transition-colors uppercase"
-                        data-src="./image_shop/button.png"
-                        style="height: auto"
-                        src="./image_shop/button.png"
-                      />
-                    </a>
-                  </div>
-                </figure>
-              </div>
-              <div class="col-span-6 lg:col-span-3 md:col-span-4 sm:col-span-6">
-                <figure class="group mb-5.5 overflow-hidden relative">
-                  <img
-                    class="aspect-[27/34] duration-300 object-cover transition-transform w-full lazyload"
-                    src="./image_shop/loading.gif"
-                    data-src="./image_shop/CAYTHUE.png"
-                    alt="Đây là danh mục"
-                  />
-                  <div
-                    class="absolute bg-white dark:bg-gray-900 group-hover:opacity-90 inset-0 opacity-0 transition-opacity"
-                  ></div>
-                  <div
-                    class="flex absolute justify-center left-0 right-0 top-1/2 -translate-y-1/2 scale-90 [@media(hover:hover)]:opacity-0 [@media(hover:hover)]:transition-all [@media(hover:hover)]:duration-300 [@media(hover:hover)]:group-hover:scale-100 [@media(hover:hover)]:group-hover:opacity-100"
-                  >
-                    <a href="#">
-                      <img
-                        class="font-bold gap-x-3 inline-flex justify-center lazyLoad leading-none lg:px-8 md:py-[18px] px-4 py-4 text-center text-gray-900 text-sm transition-colors uppercase"
-                        data-src="./image_shop/button.png"
-                        style="height: auto"
-                        src="./image_shop/button.png"
-                      />
-                    </a>
-                  </div>
-                </figure>
               </div>
             </div>
           </div>
